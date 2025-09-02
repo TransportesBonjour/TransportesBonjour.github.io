@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transportes Bonjour</title>
+  <!-- Fuente moderna -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <!-- Íconos Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/logo.jpg" type="image/jpg">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+      color: #333;
+    }
+
+    header {
+      background: #b80000;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header img {
+      max-width: 120px;
+      margin-bottom: 1rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      font-weight: 800;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: .5rem;
+    }
+
+    section {
+      padding: 3rem 1.5rem;
+      text-align: center;
+    }
+
+    section h2 {
+      color: #b80000;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    section p {
+      max-width: 800px;
+      margin: 0 auto 2rem;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+
+    .service {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      width: 280px;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .service:hover {
+      transform: translateY(-5px);
+    }
+
+    .service i {
+      font-size: 2rem;
+      color: #b80000;
+      margin-bottom: 1rem;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .gallery img {
+      width: 320px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    /* Botones flotantes */
+    .floating-buttons {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 999;
+    }
+
+    .floating-buttons a {
+      width: 50px;
+      height: 50px;
+      background: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      transition: transform 0.2s;
+      text-decoration: none;
+    }
+
+    .floating-buttons a:hover {
+      transform: scale(1.1);
+    }
+
+    .floating-buttons i {
+      font-size: 24px;
+      color: #b80000;
+    }
+
+    .floating-buttons a.whatsapp i { color: #25d366; }
+    .floating-buttons a.instagram i { color: #e4405f; }
+    .floating-buttons a.facebook i { color: #1877f2; }
+    .floating-buttons a.email i { color: #b80000; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="images/logo.jpg" alt="Logo Transportes Bonjour">
+    <h1>Transportes Bonjour</h1>
+    <p>Fletes, mudanzas y servicios logísticos en Montevideo y alrededores</p>
+  </header>
+
+  <section>
+    <h2>Sobre nosotros</h2>
+    <p>
+      En <strong>Transportes Bonjour</strong> ofrecemos soluciones de transporte confiables para particulares y empresas.
+      Nos especializamos en <strong>fletes, mudanzas, repartos y servicios logísticos</strong>, garantizando puntualidad,
+      seguridad y cuidado en cada traslado.
+    </p>
+  </section>
+
+  <section>
+    <h2>Servicios</h2>
+    <div class="services">
+      <div class="service">
+        <i class="fas fa-truck"></i>
+        <h3>Fletes</h3>
+        <p>Traslados rápidos y seguros dentro de Montevideo y zonas aledañas.</p>
+      </div>
+      <div class="service">
+        <i class="fas fa-couch"></i>
+        <h3>Mudanzas</h3>
+        <p>Servicio completo para que tu mudanza sea simple y sin complicaciones.</p>
+      </div>
+      <div class="service">
+        <i class="fas fa-boxes"></i>
+        <h3>Reparto para empresas</h3>
+        <p>Distribución y logística adaptada a las necesidades de tu negocio.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Nuestro camión en acción</h2>
+    <div class="gallery">
+      <img src="images/camion1.jpg" alt="Camión Transportes Bonjour">
+      <img src="images/camion2.jpg" alt="Camión en acción Transportes Bonjour">
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Transportes Bonjour - Todos los derechos reservados</p>
+  </footer>
+
+  <!-- Botones flotantes -->
+  <div class="floating-buttons">
+    <a href="https://wa.me/59891061536" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://www.instagram.com/transportesbonjour/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com/people/Transportes-Bonjour/61580298203485/" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="mailto:transportesbonjour@gmail.com" target="_blank" class="email"><i class="fas fa-envelope"></i></a>
+  </div>
+
+</body>
+</html>
